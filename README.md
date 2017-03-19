@@ -1,6 +1,6 @@
 # Welcome!
 
-I'm currently in the process of studying the [Ben Tristrem Unreal Engine 4 tutorials on Udemy](https://www.udemy.com/unrealcourse) while attending a community college for my associate's in Software Development. This page will have updates of my progress, and will be used to share projects I'm working on while attending school.
+I'm currently in the process of studying the [Ben Tristem's Unreal Engine 4 tutorials on Udemy](https://www.udemy.com/unrealcourse) while attending a community college for my associate's in Software Development. This page will have updates of my progress, and will be used to share projects I'm working on while attending school.
 
 # Contact Me
 
