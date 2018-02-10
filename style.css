@@ -1,0 +1,39 @@
+/* Global Styling */
+body {
+    display: grid;
+    background: #313638;
+    color: #F2D7EE;
+    grid-template-columns: 12;
+    grid-template-rows: 6;
+}
+
+a {
+    color: #E8E9EB;
+}
+
+a.active {
+    color: #F06543;
+}
+
+/* Main Navigation */
+header > nav > ul {
+    list-style-type: none;
+}
+
+header > nav > ul > li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+}
+
+header > nav > ul > li > a:hover {
+    color: #F06543;
+}
+
+/* Social Media Icons */
+.sm-icons > ul {
+    list-style-type: none;
+}
