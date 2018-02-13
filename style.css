@@ -7,9 +7,6 @@
 body {
     background: #525174;
     color: #fff;
-    display: grid;
-    grid-template-columns: 6;
-    grid-template-rowS: 5;
 }
 
 /* Header */
@@ -34,6 +31,7 @@ body {
     z-index: -1;
     opacity: 0.2;
     background-image: url('images/header2.jpeg');
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -51,7 +49,7 @@ body {
     margin-top: -100px;
 }
 
-.hireButton {
+.header button {
     background: rgba(0, 0, 0, 0.1);
     border: 1px solid #BCE784;
     color: #fff;
@@ -59,7 +57,7 @@ body {
     margin: 30px;
 }
 
-.hireButton:hover {
+.header button:hover {
     background: #BCE784;
     color: #000;
     border: none;
@@ -68,11 +66,69 @@ body {
 
 /* Skillset Section */
 #skillset {
-    background: #513B56;
+    background: #348AA7;
     color: #fff;
-    min-height: 50vh;
+    min-height: 60vh;
 }
 
 #skillset h2 {
-    margin: 30px;
+    margin: 30px auto;
+}
+
+#skillset ul {
+    margin-left: 30px;
+}
+
+.firstCol {
+    margin-left: 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+/* Social Media Icons */
+.socialMedia {
+    display: flex;
+    justify-content: center;
+}
+
+.socialMedia i {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.socialMedia i:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Project Section */
+.projects {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    padding: 50px 0;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    opacity: 0.5;
+    color: #000;
+}
+
+.projectIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.projectIcons i {
+    color: rgb(52,138,167, 0.5);
+    margin-right: 15px;
+}
+
+.projectIcons i:hover {
+    color: rgb(52,138,167, 1);
 }

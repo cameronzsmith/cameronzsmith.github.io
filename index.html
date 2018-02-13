@@ -6,70 +6,113 @@
 
         <title>Cameron Smith - Junior Developer</title>
 
+        <!-- Bootstrap & FontAwesome Styling -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap-social.css" type="text/css">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
         <!-- Custom Style -->
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
-        <div class="header">
-            <div class="textContainer">
-                <h2>Hi! My name's Cameron.</h2> 
-                <!-- TODO: add animations switching between web / software dev -->
-                <h3>I'm a Junior Web &amp; Software Developer</h3>
-                <p>I'm graduating at the end of Spring 2018 with my associate's degree in software development.</p>
-                <button class="hireButton" type="button">Hire Me</button>
-                <!-- TODO: Add continue button
-                <div class="continue"><a href="#">Continue</a>
-                     TODO: Add downward arrow icon
-                </div> -->
-            </div>
-        </div>
-        <section id="skillset">
-            <h2>My Skillset</h2>
-            <ul class="col">
-                <li>Frontend</li>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>PHP &amp; SQL</li>
-                </ul>
-            </ul>
-            <ul class="col">
-                <li>Software</li>
-                <ul>
-                    <li>C#</li>
-                    <ul>
-                        <li>MTA 98-361 Certified</li>
-                    </ul>
-                    <li>Java</li>
-                    <li>VB.NET</li>
-                </ul>
-            </ul>
-            <ul class="col">
-                <li>Technologies</li>
-                <ul>
-                    <li>MySQL</li>
-                    <li>Bootstrap</li>
-                    <li>Linux</li>
-                    <li>Windows</li>
-                    <li>Windows Server</li>
-                </ul>
-            </ul>
-        </section>
-        <section id="work">
-            <h2>I want to work for you!</h2>
-            <button class="emailButton" type="button">Click here to email me</button>
-        </section>
-        <footer>
-            <p>Made by <a href="#">me.</a></p>
-            <div class="socialMedia">
-                <ul class="smList">
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
-        </footer>
+        <div class="container-fluid">
+            <!-- Header -->
+            <div class="header">
+                <div class="textContainer">
+                    <h2>Hi! My name's Cameron.</h2> 
+                    <!-- TODO: add animations switching between web / software dev -->
+                    <h3>I'm a Junior Web &amp; Software Developer</h3>
+                    <p>I'm graduating at the end of Spring 2018 with my associate's degree in software development.</p>
+                    <button class="btn" type="button">Hire Me</button>
+                    <button class="btn" type="button">My Resume</button>
 
+                    <!-- Social media icons -->
+                    <div class="row socialMedia">
+                        <div class="col-1">
+                            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                        </div>
+                        <div class="col-1">
+                            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                        <div class="col-1">
+                            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skillset Section -->
+            <section id="skillset">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">My Projects</h2>
+                    </div>
+                </div>
+                <!-- Projects Section -->
+                <div class="row projects">
+                    <div class="col-8">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Etch-a-Sketch">
+                                <div class="card-body">
+                                    <h5 class="card-title">Etch a Sketch</h5>
+                                    <p class="card-text">This is an Etch-a-Sketch created in HTML5, CSS3, and JavaScript using the CSS Grid. Offers drawing, erasing, randomly
+                                        generated cells based on the colors of a rainbow, and much more!
+                                    </p>
+                                    <div class="projectIcons">
+                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="View repository"><i class="fab fa-github fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Etch-a-Sketch">
+                                <div class="card-body">
+                                    <h5 class="card-title">Real estate agency (<abbr title="To Be Announced">TBA</abbr>)</h5>
+                                    <p class="card-text">This theme was developed for a startup real-estate agency which is forming in the Wichita, KS area. This project features
+                                        HTML, CSS, JavaScript, and Bootstrap.
+                                    </p>
+                                    <div class="projectIcons">
+                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="View repository"><i class="fab fa-github fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Etch-a-Sketch">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web hosting template</h5>
+                                    <p class="card-text">This theme was made in HTML5 and CSS3 using media queries. It is for a web services company that seeks to offer low prices
+                                        by using students to develop the websites for portfolio work.
+                                    </p>
+                                    <div class="projectIcons">
+                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="View repository"><i class="fab fa-github fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Work With Me Section -->
+            <section id="work">
+                <h2>I want to work for you!</h2>
+                <button class="emailButton" type="button">Click here to email me</button>
+            </section>
+            <!-- Footer -->
+            <footer>
+                <p>Made by <a href="#">me.</a></p>
+            </footer>
+        </div>
+        <!-- Bootstrap JS Files -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Toggles all of our tooltips on -->
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip(); 
+            });
+        </script>
      </body>
 </html>
