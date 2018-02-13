@@ -8,8 +8,10 @@
 
         <!-- Bootstrap & FontAwesome Styling -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="bootstrap-social.css" type="text/css">
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        <!-- JQuery Modal -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
         <!-- Custom Style -->
         <link rel="stylesheet" href="style.css" type="text/css">
@@ -29,10 +31,10 @@
                     <!-- Social media icons -->
                     <div class="row socialMedia">
                         <div class="col-1">
-                            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="#"><i class="far fa-envelope fa-2x"></i></a>
                         </div>
                         <div class="col-1">
-                            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-github fa-2x"></i></a>
                         </div>
                         <div class="col-1">
                             <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
@@ -52,20 +54,8 @@
                     <div class="col-8">
                         <div class="card-deck">
                             <div class="card">
-                                <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Etch-a-Sketch">
-                                <div class="card-body">
-                                    <h5 class="card-title">Etch a Sketch</h5>
-                                    <p class="card-text">This is an Etch-a-Sketch created in HTML5, CSS3, and JavaScript using the CSS Grid. Offers drawing, erasing, randomly
-                                        generated cells based on the colors of a rainbow, and much more!
-                                    </p>
-                                    <div class="projectIcons">
-                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
-                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="View repository"><i class="fab fa-github fa-2x"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Etch-a-Sketch">
+                                <div id="project02" class="modal"></div>
+                                <a href="#project02" rel="modal:open"><img class="card-img-top" src="images/project02.png" alt="Real estate agency"></a>
                                 <div class="card-body">
                                     <h5 class="card-title">Real estate agency (<abbr title="To Be Announced">TBA</abbr>)</h5>
                                     <p class="card-text">This theme was developed for a startup real-estate agency which is forming in the Wichita, KS area. This project features
@@ -78,11 +68,26 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Etch-a-Sketch">
+                                    <div id="project01" class="modal"></div>
+                                    <a href="#project01" rel="modal:open"><img class="card-img-top" src="images/project01.png" alt="Etch-a-Sketch"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Etch a Sketch</h5>
+                                        <p class="card-text">This is an Etch-a-Sketch created in HTML5, CSS3, and JavaScript using the CSS Grid. Offers drawing, erasing, randomly
+                                            generated cells based on the colors of a rainbow, and much more!
+                                        </p>
+                                        <div class="projectIcons">
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View repository"><i class="fab fa-github fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="card">
+                                <div id="project03" class="modal"></div>
+                                <a href="#project03" rel="modal:open"><img class="card-img-top" src="images/project03.png" alt="Web hosting template"></a>
                                 <div class="card-body">
-                                    <h5 class="card-title">Web hosting template</h5>
-                                    <p class="card-text">This theme was made in HTML5 and CSS3 using media queries. It is for a web services company that seeks to offer low prices
-                                        by using students to develop the websites for portfolio work.
+                                    <h5 class="card-title">Auto repair template</h5>
+                                    <p class="card-text">This theme was made in HTML5 and CSS3 using media queries. It is a mock design that is fully responsive created
+                                        during my time at college as a way to learn responsive design without a framework.
                                     </p>
                                     <div class="projectIcons">
                                         <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
@@ -94,24 +99,25 @@
                     </div>
                 </div>
             </section>
-            <!-- Work With Me Section -->
-            <section id="work">
-                <h2>I want to work for you!</h2>
-                <button class="emailButton" type="button">Click here to email me</button>
-            </section>
             <!-- Footer -->
             <footer>
-                <p>Made by <a href="#">me.</a></p>
+                <p>Copyright &copy; <a href="#">Cameron Smith</a>. Please hire me.</p>
+                &ldquo;You miss 100% of the shots you don't take. -Wayne Gretzky&rdquo; -Michael Scott</p>
             </footer>
         </div>
         <!-- Bootstrap JS Files -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <!-- Toggles all of our tooltips on -->
+        
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+        <!-- Custom JS -->
         <script>
+            // Toggles all of our tooltips on
             $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip(); 
+                $('[data-toggle="tooltip"]').tooltip();
             });
         </script>
      </body>

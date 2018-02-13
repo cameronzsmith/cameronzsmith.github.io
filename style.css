@@ -73,6 +73,7 @@ body {
 
 #skillset h2 {
     margin: 30px auto;
+    text-shadow: 2px 2px #000;
 }
 
 #skillset ul {
@@ -112,11 +113,22 @@ body {
 
 .card {
     border: none;
+    box-shadow: 5px 5px rgba(0,0,0,0.4);
+    transition: .8s;
+    cursor: default;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card-body {
     opacity: 0.5;
     color: #000;
+}
+
+.card-primary {
+    transform: scale(1.1);
 }
 
 .projectIcons {
@@ -131,4 +143,37 @@ body {
 
 .projectIcons i:hover {
     color: rgb(52,138,167, 1);
+}
+
+#project01 {
+    min-width: 80%;
+    height: 80%;
+    background: url('images/project01.png');
+    background-size: cover;
+}
+
+#project02 {
+    min-width: 80%;
+    height: 80%;
+    background: url('images/project02.png');
+    background-size: cover;
+}
+
+#project03 {
+    min-width: 80%;
+    height: 80%;
+    background: url('images/project03.png');
+    background-size: cover;
+}
+
+/* Footer */
+footer {
+    background: rgba(0,0,0,0.3);
+    color: rgba(255,255,255,0.8);
+    min-height: 10vh;
+    text-align: center;    
+}
+
+footer p:first-child {
+    line-height: 100px;
 }
