@@ -2,163 +2,116 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Cameron Smith - Junior Developer</title>
+        <title>Cameron Smith - Jr. Developer Portfolio</title>
 
-        <!-- Bootstrap & FontAwesome Styling -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- FontAwesome -->
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-        <!-- JQuery Modal -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <!-- Custom Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Karma|Open+Sans" rel="stylesheet">
 
-        <!-- Custom Style -->
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- Custom CSS -->
+        <link href="css/style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <div class="container-fluid">
-            <!-- Header -->
-            <div class="header">
-                <div class="textContainer">
-                    <h2>Hi! My name's Cameron.</h2> 
-                    <!-- TODO: add animations switching between web / software dev -->
-                    <h3>I'm a Junior Web &amp; Software Developer</h3>
-                    <p>I'm graduating at the end of Spring 2018 with my associate's degree in software development.</p>
-                    <button class="btn" type="button">Hire Me</button>
-                    <button class="btn" type="button">My Resume</button>
-
-                    <!-- Social media icons -->
-                    <div class="row socialMedia">
-                        <div class="col-1">
-                            <a href="#"><i class="far fa-envelope fa-2x"></i></a>
-                        </div>
-                        <div class="col-1">
-                            <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                        </div>
-                        <div class="col-1">
-                            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-                        </div>
+        <div class="intro">
+            <div class="bg"></div>
+            <div class="container">
+                <h1>Hi. I'm Cameron.</h1>        
+                <p>Nice to meet you! I'm graduating in May of 2018 with my associate's degree in software development.</p>
+                <div class="button-container">
+                    <a class="btn btn--hire" href="mailto:csmith158@butlercc.edu">Hire Me</a>
+                    <a class="btn btn--resume" href="#">My Resume</a>
+                </div> <!-- /button-container -->
+                <div class="social-media">
+                    <div class="sm--mail">
+                        <a href="mailto:csmith158@butlercc.edu"><i class="far fa-envelope fa-2x"></i></a>
+                    </div>
+                    <div class="sm--github">
+                        <a href="https://github.com/cameronzsmith"><i class="fab fa-github fa-2x"></i></a>
+                    </div>
+                    <div class="sm--linkedin">
+                        <a href="http://www.linkedin.com/in/csmith158"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div> <!-- /social-media -->
+            </div> <!-- /container -->
+        </div> <!-- /intro -->
+        <div class="projects">
+            <h2>Featured projects</h2>
+            <div class="featured">
+                <div class="card">
+                    <div class="card__logo">
+                        <img src="images/project02.jpeg">
+                    </div>                    
+                    <div class="card__body">
+                        <h2>Real estate agency</h2>
+                        <p>This theme was developed for a startup real-estate agency which is forming in Wichita, KS. This project features HTML, CSS, JavaScript, and Bootstrap.</p>
+                        <ul class="card__links">
+                            <li><a href="http://czsmith.me/bell-properties"><i class="fas fa-globe fa-2x"></i></a></li>
+                            <li><a href="https://github.com/cameronzsmith/BellProperties"><i class="fab fa-github fa-2x"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <!-- Skillset Section -->
-            <section id="skillset">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="text-center">Personal Projects</h2>
+                <div class="card">
+                    <div class="card__logo">
+                        <img src="images/project01.jpeg">
+                    </div>
+                    <div class="card__body">
+                        <h2>Etch a Sketch</h2>
+                        <p>This is an Etch-a-Sketch created in HTML5, CSS3, and JavaScript using the CSS Grid. Offers drawing, erasing, randomly generated cells based on the colors of a rainbow, and much more!</p>
+                        <ul class="card__links">
+                            <li><a href="http://czsmith.me/etchasketch"><i class="fas fa-globe fa-2x"></i></a></li>
+                            <li><a href="https://github.com/cameronzsmith/etchasketch"><i class="fab fa-github fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div> <!-- /featured -->
+            <h2>Other Work</h2>
+            <div class="work">
+                <div class="card">
+                    <div class="card__body">
+                        <h2>PHP CMS</h2>
+                        <p>This CMS was developed using the MVC pattern. It interacts with a database to add, edit, and remove properties. The website was developed in HTML5, CSS3, and JavaScript. The CMS was developed in PHP.</p>
+                        <ul class="card__links">
+                            <li><a href="https://github.com/cameronzsmith/PHP-CMS"><i class="fab fa-github fa-2x"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Projects Section -->
-                <div class="row projects">
-                    <div class="col-8">
-                        <div class="card-deck">
-                            <div class="row">
-                                <div class="card" style="margin-right: 30px;">
-                                    <div id="project02" class="modal"></div>
-                                    <a href="#project02" rel="modal:open"><img class="card-img-top" src="images/project02.png" alt="Real estate agency"></a>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Real estate agency (<abbr title="To Be Announced">TBA</abbr>)</h5>
-                                        <p class="card-text">This theme was developed for a startup real-estate agency which is forming in the Wichita, KS area. This project features
-                                            HTML, CSS, JavaScript, and Bootstrap.
-                                        </p>
-                                        <div class="card-footer projectIcons">
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View repository"><i class="fab fa-github fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div id="project01" class="modal"></div>
-                                    <a href="#project01" rel="modal:open"><img class="card-img-top" src="images/project01.png" alt="Etch-a-Sketch"></a>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Etch a Sketch</h5>
-                                        <p class="card-text">This is an Etch-a-Sketch created in HTML5, CSS3, and JavaScript using the CSS Grid. Offers drawing, erasing, randomly
-                                            generated cells based on the colors of a rainbow, and much more!
-                                        </p>
-                                        <div class="card-footer projectIcons">
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View repository"><i class="fab fa-github fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h2 class="text-center" style="color: #fff; margin-top: 50px">Other Work</h2>
-                            <div class="row inProgress">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Auto repair template</h5>
-                                        <p class="card-text">This theme was made in HTML5 and CSS3 using media queries. It is a mock design that is fully responsive created
-                                            during my time at college as a way to learn responsive design without a framework.
-                                        </p>
-                                        <div class="card-footer projectIcons">
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View repository"><i class="fab fa-github fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Web hosting template</h5>
-                                        <p class="card-text">This theme was developed for a startup real-estate agency which is forming in the Wichita, KS area. This project features
-                                            HTML, CSS, JavaScript, and Bootstrap.
-                                        </p>
-                                        <div class="card-footer projectIcons">
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View repository"><i class="fab fa-github fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Tabletop roleplaying website</h5>
-                                            <p class="card-text">This is an Etch-a-Sketch created in HTML5, CSS3, and JavaScript using the CSS Grid. Offers drawing, erasing, randomly
-                                                generated cells based on the colors of a rainbow, and much more!
-                                            </p>
-                                            <div class="card-footer projectIcons">
-                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="View repository"><i class="fab fa-github fa-2x"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><abbr title="World of Warcraft">WoW</abbr> Guild Website</h5>
-                                        <p class="card-text">This theme was made in HTML5 and CSS3 using media queries. It is a mock design that is fully responsive created
-                                            during my time at college as a way to learn responsive design without a framework.
-                                        </p>
-                                        <div class="card-footer projectIcons">
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View website"><i class="fas fa-globe fa-2x"></i></a>
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="View repository"><i class="fab fa-github fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card">
+                    <div class="card__body">
+                        <h2>Web hosting template</h2>
+                        <p>This theme was created for my final in my HTML &amp; CSS class. It is fully responsive, coded in HTML5 and CSS3 with media queries for responsiveness. The instructor also showed this project to the dean as one of the top finals of the class.</p>
+                        <ul class="card__links">
+                            <li><a href="http://czsmith.me/boasthosting"><i class="fas fa-globe fa-2x"></i></a></li>
+                            <li><a href="https://github.com/cameronzsmith/web-final"><i class="fab fa-github fa-2x"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-            <!-- Footer -->
-            <footer>
-                <p>&ldquo;You miss 100% of the shots you don't take. -Wayne Gretzky&rdquo; -Michael Scott</p></p> 
-                <p>Copyright &copy; <a href="#">Cameron Smith</a><br><span class="text-muted"><small>Please hire me.</small></span></p>
-                
-            </footer>
-        </div>
-        <!-- Bootstrap JS Files -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
-        <!-- jQuery Modal -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-
-        <!-- Custom JS -->
-        <script>
-            // Toggles all of our tooltips on
-            $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
-     </body>
+                <div class="card">
+                    <div class="card__body">
+                        <h2>Rock, paper, scissors!</h2>
+                        <p>This is a simple Rock, Paper, Scissors game versus an A.I. opponent. It uses HTML, CSS, and JavaScript. This is one of the projects created for The Odin Project!</p>
+                        <ul class="card__links">
+                            <li><a href="http://czsmith.me/rockpaperscissors"><i class="fas fa-globe fa-2x"></i></a></li>
+                            <li><a href="https://github.com/cameronzsmith/RockPaperScissors"><i class="fab fa-github fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__body">
+                        <h2>And more!</h2>
+                        <p class="description">These projects are just some of my favorites. I have plenty of others on <a href="https://github.com/cameronzsmith">my GitHub</a>. I've worked on small video games in C++ with SDL, or in C# with XNA. I've made websites for local businesses using frameworks such as Bootstrap and jQuery, or completely from scratch. I've made scripts for games like Counter-Strike 1.6 in Small-C or mods for World of Warcraft in Lua. I've made console games in C# with XNA.</p>
+                        <p class="description">All of this to say <strong>I'm flexible</strong>. I can quickly pick up the technologies your company is working with. Programming has been my passion for over 15 years, and I am looking for the opportunity to turn that passion into a career.</p>
+                    </div>
+                </div>
+            </div> <!-- /work -->
+        </div> <!-- /projects -->
+        <footer>
+            <p>&quot;&quot;You miss 100% of the shots you don't take. -Wayne Gretzky&quot; -Michael Scott&quot;</p>
+            <p>Copyright &copy; 2018. This website was made by me.</p>
+            <span class="small-text">Please hire me.</span>
+        </footer>
+    </body>
 </html>
