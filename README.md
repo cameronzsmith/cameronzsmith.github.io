@@ -1,11 +1,2 @@
-# Welcome!
-
-I'm currently in the process of studying the [Ben Tristem's Unreal Engine 4 tutorials on Udemy](https://www.udemy.com/unrealcourse) while attending a community college for my associate's in Software Development. This page will have updates of my progress, and will be used to share projects I'm working on while attending school.
-
-# Contact Me
-
-You can e-mail me at cameron [AT] czsmith [DOT] me, or you can [follow me on Twitter!](https://twitter.com/cameronzsmith)
-
-# Progress Update (01)
-
-[A screenshot of what's been accomplished so far in Section 3.](http://i.imgur.com/E2iNyeV.png)
+# Introduction
+Welcome to my portfolio website's repository! I used HTML, CSS, vanilla JavaScript, and the CSS Grid to make this. First I prototyped it in Bootstrap with jQuery, and then re-created it in the CSS Grid with vanilla JavaScript.
