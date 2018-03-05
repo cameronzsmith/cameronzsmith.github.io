@@ -97,6 +97,7 @@ Introduction
     z-index: 1;
     line-height: 40px;
     text-align: center;
+    animation: 3s ease-in-out 0s 1 fade;
 }
 .intro .bg {
     background: url('../images/background.jpeg') center center;
@@ -110,7 +111,7 @@ Introduction
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: .4;
+    opacity: .2;
 }
 .intro h1, .h1-description {
     font-size: 3em;
@@ -129,6 +130,7 @@ Social media icons
 .social-media i {
     color: rgba(255, 255, 255, .5);
     transition: .8s;
+    animation: 2s ease-out 0s 1 fade;
 }
 .social-media i:hover {
     color: #fff;
@@ -273,5 +275,32 @@ Media queries
     .featured {
         display: grid;
         grid-template: repeat(2, 1fr) / 1fr;
+    }
+}
+/* ============================================================================
+CSS3 Animations
+===============================================================================*/
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
