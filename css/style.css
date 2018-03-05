@@ -280,22 +280,6 @@ Media queries
 /* ============================================================================
 CSS3 Animations
 ===============================================================================*/
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translate(0);
-    }
-}
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translate(0);
-    }
-}
 @keyframes fade {
     0% {
         opacity: 0;
