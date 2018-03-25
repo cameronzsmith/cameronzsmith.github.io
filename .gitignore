@@ -1,1 +1,5 @@
-index_non_min.html
+./dist
+./node_modules
+gulpfile.js
+package.json
+package-lock.json
